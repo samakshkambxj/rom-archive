@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROM Archive — Samaksh</title>
+<meta name="description" content="Custom ROM builds for Nothing and CMF devices. Download Lunaris, Evolution X, crDroid, and more.">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/108800886?v=4" type="image/png">
+<meta property="og:title" content="ROM Archive — Samaksh">
+<meta property="og:description" content="Custom ROM builds for Nothing and CMF devices.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/108800886?v=4">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<canvas class="particles-canvas" id="particlesCanvas"></canvas>
+<div class="grid-bg"></div>
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+
+<header>
+  <nav class="nav">
+    <a href="#" class="nav-logo">rom-archive</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#roms">ROMs</a></li>
+      <li><a href="#devices">Devices</a></li>
+    </ul>
+    <a href="https://github.com/samakshkambxj/rom-archive" target="_blank" rel="noopener" class="nav-cta">GitHub</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> 8 ROMs &middot; 3 Devices</div>
+        <h1>Custom ROM<br><span class="gradient-text">Archive</span></h1>
+        <p class="hero-desc">
+          Every ROM I've built and tested, all in one place. Flashable zips, device compatibility, and download links — ready to flash.
+        </p>
+        <div class="hero-actions">
+          <a href="#roms" class="btn btn-primary">Browse ROMs</a>
+          <a href="https://github.com/samakshkambxj" target="_blank" rel="noopener" class="btn btn-outline">My GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section id="roms" class="filters-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">ROMs</div>
+        <h2 class="section-title">All builds</h2>
+        <p class="section-desc">Filter by device or ROM to find what you need.</p>
+      </div>
+
+      <div class="filters reveal">
+        <div class="filter-group">
+          <span class="filter-label">Device:</span>
+          <div class="filter-pills" id="deviceFilters">
+            <button class="pill active" data-device="all">All</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">ROM:</span>
+          <div class="filter-pills" id="romFilters">
+            <button class="pill active" data-rom="all">All</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Status:</span>
+          <div class="filter-pills" id="statusFilters">
+            <button class="pill active" data-status="all">All</button>
+            <button class="pill" data-status="active">Active</button>
+            <button class="pill" data-status="beta">Beta</button>
+            <button class="pill" data-status="discontinued">Discontinued</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rom-grid" id="romGrid">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <div class="empty-icon">:(</div>
+        <p>No builds match your filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVICES -->
+  <section id="devices">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Devices</div>
+        <h2 class="section-title">Supported hardware</h2>
+        <p class="section-desc">All Mediatek-based Nothing and CMF devices.</p>
+      </div>
+      <div class="device-grid" id="deviceGrid">
+        <!-- Device cards injected by JS -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    Built with <span class="gradient-text">&hearts;</span> by <a href="https://github.com/samakshkambxj" target="_blank" rel="noopener" class="gradient-text">Samaksh</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
