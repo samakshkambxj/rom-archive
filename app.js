@@ -102,9 +102,7 @@ function createRomCard(build) {
   const activeDevices = build.activeDevices || [];
 
   card.innerHTML = `
-    <div class="rom-card-banner" style="background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
-      <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700; opacity: 0.3;">${build.name}</span>
-    </div>
+    <img class="rom-card-banner" src="${build.banner}" alt="${build.name} banner" loading="lazy" onerror="this.style.display='none'">
     <div class="rom-card-body">
       <div class="rom-card-header">
         <span class="rom-card-name">${build.name}</span>
