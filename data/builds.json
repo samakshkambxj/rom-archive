@@ -2,7 +2,8 @@
   {
     "id": "lunaris",
     "name": "Lunaris",
-    "description": "A clean, minimal ROM focused on stability and performance. Smooth animations, optimized battery life, and a near-stock experience with useful customizations.",
+    "description": "A clean, minimal ROM focused on stability and performance.",
+    "longDescription": "Lunaris is a clean, minimal ROM focused on stability and performance. It delivers smooth animations, optimized battery life, and a near-stock experience with carefully selected customizations. Built for users who want their phone to just work — no bloat, no gimmicks, just a solid daily driver.",
     "banner": "banners/lunaris.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": [],
@@ -10,12 +11,26 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/lunaris",
     "source": "",
-    "tags": ["stable", "minimal"]
+    "tags": ["stable", "minimal"],
+    "features": [
+      "Near-stock AOSP experience",
+      "Optimized battery life",
+      "Smooth 60/90/120Hz animations",
+      "Minimal bloatware",
+      "Monthly security patches"
+    ],
+    "changelog": "v1.0 — Initial build for Nothing Phone (3a) Lite, CMF Phone 2 Pro, CMF Phone 1",
+    "screenshots": [
+      "screenshots/lunaris/1.jpg",
+      "screenshots/lunaris/2.jpg",
+      "screenshots/lunaris/3.jpg"
+    ]
   },
   {
     "id": "evolution-x",
     "name": "Evolution X",
-    "description": "Pixel-inspired ROM with tons of customization options. OTA updates, Pixel features, and a huge theme engine. Best of both worlds.",
+    "description": "Pixel-inspired ROM with tons of customization options.",
+    "longDescription": "Evolution X brings the best of Pixel to your Nothing device. With OTA updates, Pixel launcher, Pixel-exclusive features, and a massive theme engine, it's the ROM for people who want Pixel vibes without buying a Pixel. Highly customizable yet stable enough for daily use.",
     "banner": "banners/evolution-x.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": [],
@@ -23,12 +38,27 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/evolution-x",
     "source": "",
-    "tags": ["pixel", "customizable"]
+    "tags": ["pixel", "customizable"],
+    "features": [
+      "Pixel launcher and widgets",
+      "OTA updates",
+      "Massive theme engine",
+      "Pixel-exclusive features",
+      "Custom status bar tweaks",
+      "Lockscreen customizations"
+    ],
+    "changelog": "v1.0 — Initial build with full Pixel feature set",
+    "screenshots": [
+      "screenshots/evolution-x/1.jpg",
+      "screenshots/evolution-x/2.jpg",
+      "screenshots/evolution-x/3.jpg"
+    ]
   },
   {
     "id": "crdroid",
     "name": "crDroid",
-    "description": "Feature-rich ROM based on AOSP with a focus on customization and performance. Tons of toggles, lockscreen options, and status bar tweaks.",
+    "description": "Feature-rich ROM based on AOSP with a focus on customization and performance.",
+    "longDescription": "crDroid is one of the most feature-packed custom ROMs available. Built on AOSP with a focus on customization and performance, it offers hundreds of toggles for the status bar, lockscreen, navigation, and more. If you love tweaking every aspect of your phone, crDroid is for you.",
     "banner": "banners/crdroid.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": [],
@@ -36,12 +66,27 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/crdroid",
     "source": "",
-    "tags": ["feature-rich", "customizable"]
+    "tags": ["feature-rich", "customizable"],
+    "features": [
+      "Hundreds of customization toggles",
+      "Custom status bar options",
+      "Lockscreen theming",
+      "Navigation bar tweaks",
+      "Quick settings customizations",
+      "Performance profiles"
+    ],
+    "changelog": "v1.0 — Initial build with full crDroid feature set",
+    "screenshots": [
+      "screenshots/crdroid/1.jpg",
+      "screenshots/crdroid/2.jpg",
+      "screenshots/crdroid/3.jpg"
+    ]
   },
   {
     "id": "axionos",
     "name": "AxionOS",
-    "description": "A lightweight AOSP-based ROM with carefully selected features. Fast, clean, and gets out of your way.",
+    "description": "A lightweight AOSP-based ROM with carefully selected features.",
+    "longDescription": "AxionOS is a lightweight AOSP-based ROM with carefully selected features. It's fast, clean, and gets out of your way. No unnecessary bloat, no confusing settings — just a refined Android experience that respects your time and your hardware.",
     "banner": "banners/axionos.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro"],
     "activeDevices": [],
@@ -49,12 +94,26 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/axionos",
     "source": "",
-    "tags": ["lightweight", "fast"]
+    "tags": ["lightweight", "fast"],
+    "features": [
+      "Lightweight and fast",
+      "Carefully curated features",
+      "Clean AOSP base",
+      "Minimal resource usage",
+      "Quick boot times"
+    ],
+    "changelog": "v1.0 — Initial lightweight build",
+    "screenshots": [
+      "screenshots/axionos/1.jpg",
+      "screenshots/axionos/2.jpg",
+      "screenshots/axionos/3.jpg"
+    ]
   },
   {
     "id": "project-infinity-x",
     "name": "Project Infinity X",
-    "description": "Endless customization possibilities. A ROM built for power users who want full control over every aspect of their device.",
+    "description": "Endless customization possibilities for power users.",
+    "longDescription": "Project Infinity X is built for power users who want full control over every aspect of their device. With endless customization possibilities, from UI tweaks to deep system modifications, it's the ROM that lets you make your phone truly yours. Push your device beyond its limits.",
     "banner": "banners/project-infinity-x.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": [],
@@ -62,12 +121,27 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/project-infinity-x",
     "source": "",
-    "tags": ["customizable", "power-user"]
+    "tags": ["customizable", "power-user"],
+    "features": [
+      "Deep system customization",
+      "UI and UX tweaks",
+      "Performance tuning options",
+      "Advanced power management",
+      "Custom kernel support",
+      "Gaming mode enhancements"
+    ],
+    "changelog": "v1.0 — Initial build with full customization suite",
+    "screenshots": [
+      "screenshots/project-infinity-x/1.jpg",
+      "screenshots/project-infinity-x/2.jpg",
+      "screenshots/project-infinity-x/3.jpg"
+    ]
   },
   {
     "id": "project-ascp",
     "name": "Project ASCP",
-    "description": "Android Security & Customization Project. Hardened ROM with extra privacy controls and security patches alongside customization.",
+    "description": "Android Security & Customization Project. Hardened ROM with extra privacy controls.",
+    "longDescription": "Project ASCP (Android Security & Customization Project) is a hardened ROM built with privacy and security at its core. It combines extra privacy controls, security patches, and SELinux hardening with a clean customization layer. For users who care about what runs on their device and who can see their data.",
     "banner": "banners/project-ascp.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": ["Nothing Phone (3a) Lite"],
@@ -75,12 +149,28 @@
     "status": "active",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/project-ascp",
     "source": "",
-    "tags": ["privacy", "security"]
+    "tags": ["privacy", "security"],
+    "features": [
+      "Hardened SELinux policies",
+      "Privacy dashboard",
+      "Network permission controls",
+      "App permission manager",
+      "Security patches",
+      "Custom theming engine",
+      "Encrypted storage options"
+    ],
+    "changelog": "v1.0 — Initial release for Nothing Phone (3a) Lite\n- Hardened SELinux policies\n- Privacy dashboard\n- Android 17 base",
+    "screenshots": [
+      "screenshots/project-ascp/1.jpg",
+      "screenshots/project-ascp/2.jpg",
+      "screenshots/project-ascp/3.jpg"
+    ]
   },
   {
     "id": "rising-os",
     "name": "Rising OS",
-    "description": "A rising star in the custom ROM scene. Clean UI, thoughtful features, and excellent device support. Built to impress.",
+    "description": "A rising star in the custom ROM scene. Clean UI and thoughtful features.",
+    "longDescription": "Rising OS is a rising star in the custom ROM scene. It combines a clean, modern UI with thoughtful features that actually improve your daily experience. Built with attention to detail, excellent device support, and a community-driven approach to development.",
     "banner": "banners/rising-os.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": [],
@@ -88,12 +178,27 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/rising-os",
     "source": "",
-    "tags": ["modern", "stable"]
+    "tags": ["modern", "stable"],
+    "features": [
+      "Clean modern UI",
+      "Thoughtful daily-use features",
+      "Community-driven development",
+      "Excellent device support",
+      "Regular updates",
+      "Battery optimizations"
+    ],
+    "changelog": "v1.0 — Initial build with modern UI and features",
+    "screenshots": [
+      "screenshots/rising-os/1.jpg",
+      "screenshots/rising-os/2.jpg",
+      "screenshots/rising-os/3.jpg"
+    ]
   },
   {
     "id": "avium-ui",
     "name": "Avium UI",
-    "description": "Elegant and smooth ROM with a focus on UI polish and user experience. Beautiful animations and a refined design language.",
+    "description": "Elegant and smooth ROM with a focus on UI polish and user experience.",
+    "longDescription": "Avium UI is elegance personified in a custom ROM. With a focus on UI polish, beautiful animations, and a refined design language, it transforms your device into something that feels premium in every interaction. Smooth, beautiful, and a joy to use.",
     "banner": "banners/avium-ui.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": [],
@@ -101,6 +206,20 @@
     "status": "inactive",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/avium-ui",
     "source": "",
-    "tags": ["beautiful", "smooth"]
+    "tags": ["beautiful", "smooth"],
+    "features": [
+      "Beautiful animations",
+      "Refined design language",
+      "UI polish throughout",
+      "Smooth 120Hz experience",
+      "Custom icon packs",
+      "Theme engine"
+    ],
+    "changelog": "v1.0 — Initial build with polished UI and animations",
+    "screenshots": [
+      "screenshots/avium-ui/1.jpg",
+      "screenshots/avium-ui/2.jpg",
+      "screenshots/avium-ui/3.jpg"
+    ]
   }
 ]

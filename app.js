@@ -120,8 +120,8 @@ function createRomCard(build) {
         }).join('')}
       </div>
       <div class="rom-card-actions">
-        <a href="${build.download}" target="_blank" rel="noopener" class="btn btn-primary${isActive ? '' : ' disabled'}">${isActive ? 'Download' : 'Unavailable'}</a>
-        ${build.source ? `<a href="${build.source}" target="_blank" rel="noopener" class="btn btn-outline${isActive ? '' : ' disabled'}">Source</a>` : ''}
+        <a href="rom.html?id=${build.id}" class="btn btn-primary">View Details</a>
+        ${isActive ? `<a href="${build.download}" target="_blank" rel="noopener" class="btn btn-outline">Download</a>` : ''}
       </div>
     </div>
   `;

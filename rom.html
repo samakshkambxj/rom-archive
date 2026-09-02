@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROM Archive — Loading...</title>
+<meta name="description" content="Download custom ROM builds for Nothing and CMF devices.">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/108800886?v=4" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<canvas class="particles-canvas" id="particlesCanvas"></canvas>
+<div class="grid-bg"></div>
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">rom-archive</a>
+    <ul class="nav-links">
+      <li><a href="index.html">All ROMs</a></li>
+      <li><a href="index.html#devices">Devices</a></li>
+    </ul>
+    <a href="https://github.com/samakshkambxj/rom-archive" target="_blank" rel="noopener" class="nav-cta">GitHub</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <!-- ROM DETAIL (injected by JS) -->
+  <div id="romDetail"></div>
+
+  <!-- 404 STATE -->
+  <div class="rom-404" id="rom404" style="display:none;">
+    <div class="container" style="text-align:center; padding: 120px 20px;">
+      <h1 style="font-size:clamp(4rem,10vw,8rem); font-weight:800; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; line-height:1;">404</h1>
+      <p style="font-size:18px; color:var(--text-dim); margin-bottom:24px;">ROM not found. Like a kernel panic, but less scary.</p>
+      <a href="index.html" class="btn btn-primary">Back to Archive</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Built with <span class="gradient-text">&hearts;</span> by <a href="https://github.com/samakshkambxj" target="_blank" rel="noopener" class="gradient-text">Samaksh</a>
+  </div>
+</footer>
+
+<script src="rom.js"></script>
+</body>
+</html>

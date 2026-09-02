@@ -305,6 +305,130 @@ footer a:hover { opacity: 0.8; }
 }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* ===== ROM DETAIL PAGE ===== */
+.rom-hero {
+  position: relative; min-height: 400px; display: flex; align-items: flex-end;
+  overflow: hidden;
+}
+.rom-hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  filter: blur(4px) brightness(0.4);
+  transform: scale(1.05);
+}
+.rom-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, var(--bg) 0%, transparent 60%);
+}
+.rom-hero-content {
+  position: relative; z-index: 2; padding: 40px 0 48px; width: 100%;
+}
+.rom-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono); font-size: 13px; color: var(--text-dim);
+  margin-bottom: 24px; transition: color 0.2s;
+}
+.rom-back:hover { color: var(--text); }
+.rom-hero-info h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800;
+  letter-spacing: -0.02em; margin: 12px 0 8px;
+}
+.rom-hero-sub {
+  font-family: var(--font-mono); font-size: 14px; color: var(--text-dim);
+}
+
+/* INFO SECTION */
+.rom-info-section { padding: 48px 0 60px; }
+.rom-info-grid {
+  display: grid; grid-template-columns: 1fr 340px; gap: 40px; align-items: start;
+}
+.rom-info-main h2 {
+  font-family: var(--font-mono); font-size: 16px; font-weight: 700;
+  color: var(--accent-1); margin-bottom: 14px; margin-top: 32px;
+  letter-spacing: 0.02em;
+}
+.rom-info-main h2:first-child { margin-top: 0; }
+.rom-long-desc {
+  font-size: 16px; color: var(--text-dim); line-height: 1.8;
+}
+.rom-features {
+  list-style: none; padding: 0; display: grid; gap: 8px;
+}
+.rom-features li {
+  font-size: 14px; color: var(--text-dim); padding: 10px 16px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  position: relative; padding-left: 32px;
+}
+.rom-features li::before {
+  content: '>'; position: absolute; left: 14px;
+  font-family: var(--font-mono); font-weight: 700; color: var(--accent-2);
+}
+.rom-changelog {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; overflow-x: auto;
+}
+.rom-changelog pre {
+  font-family: var(--font-mono); font-size: 13px; color: var(--text-dim);
+  white-space: pre-wrap; line-height: 1.7;
+}
+
+/* SIDEBAR */
+.rom-sidebar-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 24px; margin-bottom: 16px;
+}
+.rom-sidebar-card h3 {
+  font-family: var(--font-mono); font-size: 14px; font-weight: 700;
+  margin-bottom: 16px; color: var(--text);
+}
+.rom-sidebar-row {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding: 10px 0; border-bottom: 1px solid var(--border); gap: 12px;
+}
+.rom-sidebar-row:last-child { border-bottom: none; }
+.rom-sidebar-label {
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+  color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+.rom-sidebar-devices, .rom-sidebar-tags {
+  display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end;
+}
+.rom-tag {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+  padding: 3px 10px; border-radius: 6px;
+  background: rgba(108, 92, 231, 0.1); color: var(--accent-1);
+}
+.rom-download-btn { width: 100%; justify-content: center; margin-top: 4px; }
+.rom-download-note {
+  font-size: 12px; color: var(--muted); text-align: center; margin-top: 10px;
+}
+
+/* SCREENSHOTS */
+.rom-screenshots-section { padding: 0 0 80px; }
+.rom-screenshots-section h2 {
+  font-family: var(--font-mono); font-size: 16px; font-weight: 700;
+  color: var(--accent-1); margin-bottom: 20px;
+}
+.rom-screenshots-scroll {
+  display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+}
+.rom-screenshots-scroll::-webkit-scrollbar { height: 6px; }
+.rom-screenshots-scroll::-webkit-scrollbar-track { background: var(--surface); border-radius: 3px; }
+.rom-screenshots-scroll::-webkit-scrollbar-thumb { background: var(--accent-1); border-radius: 3px; }
+.rom-screenshot-item {
+  flex-shrink: 0; width: 260px; scroll-snap-align: start;
+  border-radius: 14px; overflow: hidden;
+  border: 1px solid var(--border); background: var(--surface);
+}
+.rom-screenshot-item img {
+  width: 100%; height: 460px; object-fit: cover; display: block;
+}
+
+/* ROM 404 */
+.rom-404 { min-height: 60vh; display: flex; align-items: center; justify-content: center; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   :root { --pad: 20px; }
@@ -320,6 +444,9 @@ footer a:hover { opacity: 0.8; }
   .rom-grid { grid-template-columns: 1fr; }
   .device-grid { grid-template-columns: 1fr; }
   .filters { flex-direction: column; gap: 16px; }
+  .rom-info-grid { grid-template-columns: 1fr; }
+  .rom-screenshot-item { width: 220px; }
+  .rom-screenshot-item img { height: 400px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
