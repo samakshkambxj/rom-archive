@@ -160,6 +160,9 @@ function renderBuilds() {
     return deviceMatch && romMatch && statusMatch;
   });
 
+  // Active ROMs first
+  filtered.sort((a, b) => (a.status === 'active' ? 0 : 1) - (b.status === 'active' ? 0 : 1));
+
   romGrid.innerHTML = '';
   if (filtered.length === 0) {
     emptyState.style.display = 'block';
