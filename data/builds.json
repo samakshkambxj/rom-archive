@@ -71,7 +71,7 @@
     "banner": "banners/project-ascp.jpg",
     "devices": ["Nothing Phone (3a) Lite", "CMF Phone 2 Pro", "CMF Phone 1"],
     "activeDevices": ["Nothing Phone (3a) Lite"],
-    "android": "15",
+    "android": "17",
     "status": "active",
     "download": "https://github.com/samakshkambxj/rom-archive/releases/tag/project-ascp",
     "source": "",
