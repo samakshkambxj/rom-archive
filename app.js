@@ -96,8 +96,11 @@ const bannerColors = {
 
 function createRomCard(build) {
   const card = document.createElement('div');
-  card.className = 'rom-card';
+  card.className = 'rom-card' + (build.status !== 'active' ? ' inactive' : '');
   const bgColor = bannerColors[build.id] || '#111128';
+  const isActive = build.status === 'active';
+  const activeDevices = build.activeDevices || [];
+
   card.innerHTML = `
     <div class="rom-card-banner" style="background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
       <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700; opacity: 0.3;">${build.name}</span>
@@ -112,16 +115,20 @@ function createRomCard(build) {
         <span class="rom-card-android">Android ${build.android}</span>
       </div>
       <div class="rom-card-device-tags">
-        ${build.devices.map(d => `<span class="device-tag" data-device="${d}">${d}</span>`).join('')}
+        ${build.devices.map(d => {
+          const isDeviceActive = isActive && activeDevices.includes(d);
+          const cls = isDeviceActive ? ' active-device' : (!isActive || activeDevices.length === 0 ? ' inactive' : ' inactive');
+          return `<span class="device-tag${cls}" data-device="${d}">${d}</span>`;
+        }).join('')}
       </div>
       <div class="rom-card-actions">
-        <a href="${build.download}" target="_blank" rel="noopener" class="btn btn-primary">Download</a>
-        ${build.source ? `<a href="${build.source}" target="_blank" rel="noopener" class="btn btn-outline">Source</a>` : ''}
+        <a href="${build.download}" target="_blank" rel="noopener" class="btn btn-primary${isActive ? '' : ' disabled'}">${isActive ? 'Download' : 'Unavailable'}</a>
+        ${build.source ? `<a href="${build.source}" target="_blank" rel="noopener" class="btn btn-outline${isActive ? '' : ' disabled'}">Source</a>` : ''}
       </div>
     </div>
   `;
-  // Device tag click
-  card.querySelectorAll('.device-tag').forEach(tag => {
+  // Device tag click (only for active devices)
+  card.querySelectorAll('.device-tag:not(.inactive)').forEach(tag => {
     tag.addEventListener('click', () => {
       activeDevice = tag.dataset.device;
       updateFilterUI();
